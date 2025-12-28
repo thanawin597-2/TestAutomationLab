@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2025-12-28T21:41:36.953177" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\User\TestAutomationLab\Test1.robot">
+<test id="s1-t1" name="Register Success With Organization" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:37.254623" level="INFO">Opening browser 'Chrome' to base url 'file:///C:/Users/User/TestAutomationLab/StarterFiles/Registration.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-28T21:41:37.254196" elapsed="1.330030"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:38.585544" level="INFO">Typing text 'Somyod' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Somyod</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T21:41:38.584957" elapsed="0.114967"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:38.700595" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Sodsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T21:41:38.700312" elapsed="0.066527"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:38.767466" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<arg>id=organization</arg>
+<arg>CS KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T21:41:38.767167" elapsed="0.066287"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:38.834054" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>somyod@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T21:41:38.833816" elapsed="0.086743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:38.921177" level="INFO">Typing text '091-001-1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>091-001-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T21:41:38.920922" elapsed="0.062410"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:38.983942" level="INFO">Clicking button 'id=registerButton'.</msg>
+<arg>id=registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-12-28T21:41:38.983705" elapsed="0.061865"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-28T21:41:42.047131" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-28T21:41:39.045996" elapsed="3.001499"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:42.060179" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-28T21:41:42.048467" elapsed="0.011857"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:42.081130" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T21:41:42.061034" elapsed="0.020295"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-28T21:41:42.100262" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-28T21:41:42.081906" elapsed="0.018479"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-28T21:41:42.100875" elapsed="2.150373"/>
+</kw>
+<status status="PASS" start="2025-12-28T21:41:37.252800" elapsed="6.999315"/>
+</test>
+<status status="PASS" start="2025-12-28T21:41:36.954521" elapsed="7.300614"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test1" id="s1" pass="1" fail="0" skip="0">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
